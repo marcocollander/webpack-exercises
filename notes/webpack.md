@@ -7,4 +7,6 @@ Weback is used to compile JavaScript modules. Once installed, you can interact w
 
 > Live Preview 
 > Check out this guide live on [StackBlitz](https://stackblitz.com/github/webpack/webpack.js.org/tree/main/examples/getting-started?file=README.md&terminal=)
-> 
+
+## Modules
+
