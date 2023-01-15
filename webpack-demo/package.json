@@ -4,7 +4,7 @@
   "description": "project demo with module bundler webpack",
   "private": true,
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --mode development"
   },
   "keywords": [],
   "author": "Zenon Marek Raubuć",
