@@ -1,3 +1,3 @@
-import { message } from './message';
+import { message } from "./message";
 
-message('Działa po bundlingu!');
+message("Działa po bundling!");

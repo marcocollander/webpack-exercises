@@ -1,1 +1,1 @@
-const message = (info) => console.log(info);
+export const message = (info) => console.log(info);
