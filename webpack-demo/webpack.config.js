@@ -1,16 +1,23 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  mode: 'development',
+  entry: './src/js/main.js',
   output: {
-    filename: 'bundle.js',
+    filename: 'app.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  devServer: {
+    static: './dist',
+  },
+
+  devtool: 'eval-cheap-source-map',
+
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        test: /\.scss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
