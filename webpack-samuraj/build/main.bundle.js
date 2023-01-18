@@ -91,9 +91,34 @@
   !*** ./src/index.js ***!
   \**********************/
 /*! no exports provided */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module parse failed: Unexpected token (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n> <<<<<<< HEAD\\n| import { message, messageDom } from './message';\\n| import info from './title.txt';\");\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./message */ \"./src/message.js\");\n/* harmony import */ var _title_txt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./title.txt */ \"./src/title.txt\");\n\n\n\nObject(_message__WEBPACK_IMPORTED_MODULE_0__[\"message\"])(\"Działa po bundlingu!\");\n\nObject(_message__WEBPACK_IMPORTED_MODULE_0__[\"message\"])(\"Działa po bundling!\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/message.js":
+/*!************************!*\
+  !*** ./src/message.js ***!
+  \************************/
+/*! exports provided: message, messageDom */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"message\", function() { return message; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"messageDom\", function() { return messageDom; });\nconst message = (info) => console.log(info);\nconst messageDom = (info) => (document.body.textContent = info);\n\n\n//# sourceURL=webpack:///./src/message.js?");
+
+/***/ }),
+
+/***/ "./src/title.txt":
+/*!***********************!*\
+  !*** ./src/title.txt ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Hello world!!!\");\n\n//# sourceURL=webpack:///./src/title.txt?");
 
 /***/ })
 
