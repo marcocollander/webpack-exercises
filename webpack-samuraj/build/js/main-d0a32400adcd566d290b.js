@@ -86,42 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/components/footer.css":
-/*!***********************************!*\
-  !*** ./src/components/footer.css ***!
-  \***********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/components/footer.css?");
-
-/***/ }),
-
-/***/ "./src/components/footer.js":
-/*!**********************************!*\
-  !*** ./src/components/footer.js ***!
-  \**********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.css */ \"./src/components/footer.css\");\n\r\n\n\n//# sourceURL=webpack:///./src/components/footer.js?");
-
-/***/ }),
-
-/***/ "./src/css/style.css":
-/*!***************************!*\
-  !*** ./src/css/style.css ***!
-  \***************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/css/style.css?");
-
-/***/ }),
-
 /***/ "./src/data/title.txt":
 /*!****************************!*\
   !*** ./src/data/title.txt ***!
@@ -142,7 +106,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tools_message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tools/message */ \"./src/tools/message.js\");\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer */ \"./src/components/footer.js\");\n/* harmony import */ var _data_title_txt__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./data/title.txt */ \"./src/data/title.txt\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n\n\n\n\n\nObject(_tools_message__WEBPACK_IMPORTED_MODULE_0__[\"message\"])('Działa po bundlingu!');\nObject(_tools_message__WEBPACK_IMPORTED_MODULE_0__[\"messageDom\"])(_data_title_txt__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tools_message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tools/message */ \"./src/tools/message.js\");\n/* harmony import */ var _data_title_txt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data/title.txt */ \"./src/data/title.txt\");\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sass/index.scss */ \"./src/sass/index.scss\");\n\n\n\n\nObject(_tools_message__WEBPACK_IMPORTED_MODULE_0__[\"message\"])('Działa po bundlingu!');\nObject(_tools_message__WEBPACK_IMPORTED_MODULE_0__[\"messageDom\"])(_data_title_txt__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/sass/index.scss":
+/*!*****************************!*\
+  !*** ./src/sass/index.scss ***!
+  \*****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/sass/index.scss?");
 
 /***/ }),
 

@@ -9,7 +9,7 @@ module.exports = {
     main: './src/index.js',
   },
   output: {
-    filename: '[name]-[contenthash].js',
+    filename: 'js/[name]-[contenthash].js',
     path: path.resolve(__dirname, '../', 'build'),
   },
   devServer: {
@@ -24,27 +24,23 @@ module.exports = {
         use: 'raw-loader',
       },
       {
-        test: /\.css$/i,
-        // use: ['style-loader', 'css-loader'],
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+      {
+        test: /\.scss$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
     ],
   },
   plugins: [
     new CleanWebpackPlugin(),
-    // new HtmlWebpackPlugin({
-    //   title: 'Webpack samuraja',
-    // }),
-    // new HtmlWebpackPlugin({
-    //   title: 'Podstrona',
-    //   filename: 'about.html'
-    // }),
     new HtmlWebpackPlugin({
       title: 'Webpack z samurajem',
       template: 'src/template.html',
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: 'css/[name]-[contenthash].css',
     }),
   ],
 };
