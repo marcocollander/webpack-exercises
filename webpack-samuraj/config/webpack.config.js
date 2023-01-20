@@ -1,7 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
@@ -9,7 +8,7 @@ module.exports = {
     main: './src/index.js',
   },
   output: {
-    filename: 'js/[name]-[contenthash].js',
+    filename: 'js/[name].js',
     path: path.resolve(__dirname, '../', 'build'),
   },
   devServer: {
@@ -24,12 +23,12 @@ module.exports = {
         use: 'raw-loader',
       },
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        test: /\.s[c]ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        test: /\.(jpg|png|svg|gif|jepg)$/,
+        use: 'file-loader',
       },
     ],
   },
@@ -38,9 +37,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Webpack z samurajem',
       template: 'src/template.html',
-    }),
-    new MiniCssExtractPlugin({
-      filename: 'css/[name]-[contenthash].css',
     }),
   ],
 };
