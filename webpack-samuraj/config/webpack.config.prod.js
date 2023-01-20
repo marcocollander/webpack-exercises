@@ -33,7 +33,7 @@ module.exports = {
             },
           },
           {
-            loader: 'images-webpack-loader',
+            loader: 'image-webpack-loader',
             options: {
               mozjpeg: {
                 quality: 70,
