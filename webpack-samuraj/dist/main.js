@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./message */ \"./src/message.js\");\n/* harmony import */ var _message__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_message__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nObject(_message__WEBPACK_IMPORTED_MODULE_0__[\"message\"])('Działa po bundlingu!');\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./message */ \"./src/message.js\");\n\r\n\r\nObject(_message__WEBPACK_IMPORTED_MODULE_0__[\"message\"])(\"Działa po bundling!\");\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -102,10 +102,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mes
 /*!************************!*\
   !*** ./src/message.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: message */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const message = (info) => console.log(info);\n\n//# sourceURL=webpack:///./src/message.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"message\", function() { return message; });\nconst message = (info) => console.log(info);\r\n\n\n//# sourceURL=webpack:///./src/message.js?");
 
 /***/ })
 
