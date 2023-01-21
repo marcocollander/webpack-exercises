@@ -1,0 +1,18 @@
+@use 'var';
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: rgb(13, 2, 2);
+  font-weight: bold;
+  background-color: var.$second-color;
+  background-image: url('../images/flower.jpg');
+  background-size: contain;
+
+  p {
+    display: flex;
+    justify-content: center;
+  }
+}
